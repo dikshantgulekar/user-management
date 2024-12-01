@@ -1,0 +1,596 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0 0 0);
+} 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+h1{
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
+/* /////////////////////////////////////////////////// */
+/* ----------------------------HEADER--------------------------- */
+
+
+.header{
+  /* border: solid 1px red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ffff;
+}
+
+.project-name{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu{
+  background-color:   rgb(64 64 64);
+  border-radius: 20px;
+}
+.menu-buttons{
+  display: flex;
+  gap: 15px;
+}
+
+.menu-buttons button {
+  background-color:  rgb(64 64 64);
+  border-radius: 20px;
+  color: #ffff;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  font-size: 22px; 
+  cursor: pointer;
+  background-color:  rgb(64 64 64);
+  border-radius: 20px;
+}
+
+.Linkcss{
+  text-decoration: none;
+  background-color:  rgb(64 64 64);
+  border-radius: 20px;
+  color: #ffff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.Linkcss:hover{
+  background-color: white;
+  color: #1e1e1e;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* ----------------------------HOME--------------------------- */
+.homepage-container,
+.table-container {
+  background-color: rgb(48, 48, 48);
+  border: solid 1px #5a5a5a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.alluser h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.alluser span {
+  color: #4ade80;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.home-buttons .button {
+  background-color: #4ade80;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-buttons .button:hover {
+  background-color: #38b773;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(56, 183, 115, 0.3);
+}
+
+.home-buttons .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+table {
+  color: #fff;
+  background-color: #444;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+  font-weight: 700;
+}
+
+thead th {
+  text-align: center;
+}
+
+tbody td {
+  text-align: center;
+}
+
+.action-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.action-button.edit {
+  color: #4ade80;
+}
+
+.action-button.edit:hover {
+  color: #38b773;
+}
+
+.action-button.delete {
+  color: #ff4d4f;
+}
+
+.action-button.delete:hover {
+  color: #d43f3a;
+}
+/* //////////////////////////////////////////////////////// */
+
+/* Update button styles */
+.update-button {
+  background-color: #4ade80;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.update-button:hover {
+  background-color: #38b773;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(56, 183, 115, 0.3);
+}
+
+/* Delete button styles */
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(211, 47, 47, 0.3);
+}
+
+
+
+/* //////////////////////////////////////////////////////// */
+/* ----------------------------FORM--------------------------- */
+.form-div {
+  border: solid 1px #5a5a5a;
+  background-color: rgb(48, 48, 48);
+  border-radius: 10px;
+  height: auto;
+  width: 450px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-div label {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 0 !important; 
+}
+
+.form-div input {
+  background-color: #444;
+  border: 1px solid #777;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  width: calc(100% - 24px);
+  text-align: center;
+}
+
+
+.form-div input:focus {
+  outline: none;
+  border: 1px solid #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+
+.form-div .button {
+  background-color: #4ade80;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.form-div .button:hover {
+  background-color: #38b773;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(56, 183, 115, 0.3);
+}
+
+.form-div p[role="alert"] {
+  color: #ff4d4f;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.form-div select,
+.form-div option {
+  background-color: #444;
+  border: 1px solid #777;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  width: calc(100% - 24px);
+  margin-top: 10px;
+}
+
+.form-div select:focus {
+  outline: none;
+  border: 1px solid #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+/* File Input Styling */
+#productImg {
+  background-color: #444;
+  border: 1px solid #777;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  width: calc(100% - 24px);
+  margin-top: 10px;
+}
+
+#productImg:focus {
+  outline: none;
+  border: 1px solid #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+/* //////////////////////////////////////////////////////// */
+
+
+.userData-container {
+  width: 95%;
+  padding: 10px;
+  margin: auto;
+  background-color: #444;
+  border: 1px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Header adjustment for responsiveness */
+.userData-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userData-header .userData-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.signout-button {
+  margin-top: 10px;
+  width: 100%;
+  text-align: right;
+}
+
+.signout-button .button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signout-button .button:hover {
+  background-color: #d9363e;
+}
+
+/* Table styling */
+.userData-Table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  background-color: #333;
+  font-size: 14px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+.custom-table th {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.custom-table tr:hover {
+  background-color: #444;
+}
+/* /////////////////////////////////////////////////////// */
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-card {
+  background-color: #222;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h2 , p{
+  color: white;
+}
+
+
+
+/* ///////////////////////////////////////////////////////// */
+
+/* ===========================  MEDIA QUERRY =============================== */
+
+@media only screen and (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .project-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .menu-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-buttons button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-buttons button:hover {
+    background-color: white;
+    color: #1e1e1e;
+  }
+
+  .profile {
+    margin-top: 10px;
+  }
+
+  /* Form container styles */
+  .form-div {
+    border: 1px solid #5a5a5a;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Label styles */
+  .form-label,
+  .form-div label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  /* Shared input, select, and file input styles */
+  .form-control,
+  .form-select,
+  #productImg {
+    background-color: #444;
+    border: 1px solid #777;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* Focus styles */
+  .form-control:focus,
+  .form-select:focus,
+  #productImg:focus {
+    outline: none;
+    border: 1px solid #4ade80;
+    box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+  }
+
+  /* Option styles for dropdown */
+  .form-select option {
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  /* Error message styles */
+  p[role="alert"] {
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  /* Button styles */
+  .form-div .button {
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: #4ade80;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-div .button:hover {
+    background-color: #38b773;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(56, 183, 115, 0.3);
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .userData-container {
+    padding: 8px;
+  }
+
+  .signout-button {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .userData-header {
+    align-items: center;
+  }
+
+  .userData-title {
+    font-size: 16px;
+  }
+
+}
